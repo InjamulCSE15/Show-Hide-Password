@@ -1,8 +1,7 @@
 var passWord  = document.getElementById('userPassword');
 var showPassToggler  = document.getElementById('showPassToggler');
-
+var 
 // Create the function:
-
 showHidePassword = () => {
     if (passWord.type == 'password') {
         passWord.setAttribute('type', 'text');
@@ -13,9 +12,11 @@ showHidePassword = () => {
         showPassToggler.classList.add('fa-eye-slash');
         showPassToggler.classList.remove('fa-eye');
         passWord.setAttribute('type', 'password');
-
     }
-        
 };
-
+// EventListener:  
 showPassToggler.addEventListener('click', showHidePassword);
+
+// Dynamic year:
+let copyrightYear =  new Date().getFullYear();
+console.log(copyrightYear);
