@@ -1,6 +1,6 @@
 var passWord  = document.getElementById('userPassword');
 var showPassToggler  = document.getElementById('showPassToggler');
-var 
+var projectYear = document.getElementById('projectYear');
 // Create the function:
 showHidePassword = () => {
     if (passWord.type == 'password') {
@@ -19,4 +19,4 @@ showPassToggler.addEventListener('click', showHidePassword);
 
 // Dynamic year:
 let copyrightYear =  new Date().getFullYear();
-console.log(copyrightYear);
+projectYear.innerText = copyrightYear;
